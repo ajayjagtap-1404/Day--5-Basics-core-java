@@ -30,10 +30,22 @@ public class BasicCoreJavaProgram {
         System.out.println("Program for Even odd check :");
         int number = 15;
         basicCoreJavaProgram.CheckEvenOdd(number);
-
+        System.out.println("---------------------------------");
+        System.out.println("Check Whether an Alphabet is Vowel or Consonant :");
+        char ch = 'a';
+        basicCoreJavaProgram.checkVowelOrConsonant(ch);
         System.out.println("---------------------------------");
 
+    }
+    void checkVowelOrConsonant(char ch) {
 
+        if (ch == 'a' || ch == 'e'|| ch == 'i'|| ch == 'o'|| ch == 'u') {
+
+            System.out.println(ch +" is vowel");
+
+        } else {
+            System.out.println(ch +" is consonant");
+        }
     }
     void CheckEvenOdd(int number) {
         if (number > 1) {
