@@ -5,20 +5,36 @@ import java.util.Scanner;
 public class BasicCoreJavaProgram {
     public static void main(String[] args) {
         System.out.println("Welcome to Basic java Program :");
-     //   Scanner sc = new Scanner(System.in);
+
 
         BasicCoreJavaProgram basicCoreJavaProgram = new BasicCoreJavaProgram();
-        basicCoreJavaProgram.findPowerOfTwo();
+        int power = 3;
+        basicCoreJavaProgram.findPowerOfTwo(power);
+        System.out.println();
+        System.out.println("---------------------------------");
+        int harmonicNum = 5;
+        basicCoreJavaProgram.harmonicNumber(harmonicNum);
+        System.out.println("---------------------------------");
+
 
     }
-     void findPowerOfTwo() {
-        int Total = 0;
-        System.out.println("Enter the Power of 2:");
-        Scanner sc = new Scanner(System.in);
-        int Power = sc.nextInt();
-        for (int i = 0; i <= Power; i++) {
-            Total = (int) Math.pow(2, i);
-            System.out.print(" power is : " + Total);
+    void harmonicNumber(int harmonicNum) {
+        System.out.println(" Nth harmonic number: ");
+        double total = 0;
+        for (int i = 1; i <= harmonicNum; i++) {
+            total = total + (double) 1 / i;
+
         }
+
+        System.out.println(harmonicNum + " th Harmonic no is: " + total);
+    }
+        void findPowerOfTwo(int power) {
+            System.out.println("Power of 2 upto  " + power+ " time  is :");
+        int Total = 0;
+            for (int i = 0; i <= power; i++) {
+            Total = (int) Math.pow(2, i);
+            System.out.print( Total +" ");
+        }
+
     }
 }
