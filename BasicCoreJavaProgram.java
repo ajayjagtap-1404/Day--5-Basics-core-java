@@ -23,6 +23,24 @@ public class BasicCoreJavaProgram {
         int dividend = 11;
         int divisor = 2;
         basicCoreJavaProgram.findQuotientAndRemainder(dividend,divisor);
+        System.out.println("---------------------------------");
+        System.out.println("Swapping of numbers ");
+        basicCoreJavaProgram.swappingOfTwoNumbers();
+
+    }
+    void swappingOfTwoNumbers() {
+        int temp = 0 , number1 = 10, number2 = 20;
+        System.out.println("number one before swapping "+number1);
+        System.out.println("number two before swapping "+number2);
+        System.out.println();
+
+        // swapping
+        temp = number1;
+        number1 = number2;
+        number2 = temp;
+
+        System.out.println("Number one after swapping " +number1);
+        System.out.println("Number two after swapping " +number2);
 
     }
     void findQuotientAndRemainder(int dividend, int divisor) {
