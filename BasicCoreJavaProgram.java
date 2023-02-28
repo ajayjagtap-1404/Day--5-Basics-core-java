@@ -35,7 +35,21 @@ public class BasicCoreJavaProgram {
         char ch = 'a';
         basicCoreJavaProgram.checkVowelOrConsonant(ch);
         System.out.println("---------------------------------");
+        System.out.println("find LargestAmong Three numbers :");
+        int num1 = 3, num2 = 2, num3 = 1;
+        basicCoreJavaProgram.findLargestAmongThree(num1,num2,num3);
+        System.out.println("---------------------------------");
+    }
+    void findLargestAmongThree(int num1,int num2,int num3) {
+        if (num1 > num2 && num1 > num3) {
+            System.out.println(num1+ " number is greater");
 
+        } else if (num2 > num1 && num2 > num3) {
+            System.out.println(num2+ " number is greater");
+
+        } else {
+            System.out.println(num3+ " number is greater");
+        }
     }
     void checkVowelOrConsonant(char ch) {
 
