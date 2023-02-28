@@ -19,9 +19,21 @@ public class BasicCoreJavaProgram {
         basicCoreJavaProgram.findPrimeFactors(num);
         System.out.println();
         System.out.println("---------------------------------");
-
+        System.out.println("Quotient and Remainder are :");
+        int dividend = 11;
+        int divisor = 2;
+        basicCoreJavaProgram.findQuotientAndRemainder(dividend,divisor);
 
     }
+    void findQuotientAndRemainder(int dividend, int divisor) {
+
+        int quotient = dividend / divisor;
+        int remainder = dividend % divisor;
+
+        System.out.println("quotient = "+quotient);
+        System.out.println("remainder = "+remainder);
+    }
+
 
     void findPrimeFactors(int num) {
         System.out.println("Prime factor of " + num+ " are :");
