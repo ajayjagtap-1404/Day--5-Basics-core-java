@@ -6,33 +6,20 @@ public class BasicCoreJavaProgram {
     public static void main(String[] args) {
         System.out.println("Welcome to Basic java Program :");
 
-        System.out.println("Enter the number of time to flip coin ");
         Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
-        double head = 0;
-        double tail = 0;
+        System.out.println("Enter year you want to check Leap year or not :");
+        int year = sc .nextInt();
+        if (year > 1000 && year < 9999) {
 
-        for (int i = 0; i < input; i++) {
-
-            double num = Math.floor(Math.random() * 10)%2;
-            System.out.println("Random  number is " +num);
-            System.out.println();
-            if (num < 0.5) {
-                tail++;
+            if( (year % 4 == 0 ) && (year % 100 != 0) || (year % 400 == 0)) {
+                System.out.println(year + " Leap Year ");
             } else {
-                head++;
+                System.out.println(year + " not  Leap Year ");
+
             }
-            System.out.println("heads:" + head);
-            System.out.println("tail: " + tail);
-
-            // percentage
+        } else {
+            System.out.println("please Enter four digit number");
         }
-        double headsPercentage = (head / input) * 100;
-        double tailsPercentage = (tail / input) * 100;
-
-        System.out.println("Percentage of head :" + headsPercentage);
-        System.out.println("Percentage of tails :" + tailsPercentage);
-
 
     }
 }
