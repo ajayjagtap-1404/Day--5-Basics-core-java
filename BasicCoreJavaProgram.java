@@ -26,9 +26,27 @@ public class BasicCoreJavaProgram {
         System.out.println("---------------------------------");
         System.out.println("Swapping of numbers ");
         basicCoreJavaProgram.swappingOfTwoNumbers();
+        System.out.println("---------------------------------");
+        System.out.println("Program for Even odd check :");
+        int number = 15;
+        basicCoreJavaProgram.CheckEvenOdd(number);
+
+        System.out.println("---------------------------------");
+
 
     }
-    void swappingOfTwoNumbers() {
+    void CheckEvenOdd(int number) {
+        if (number > 1) {
+            if (number % 2 == 0) {
+                System.out.println(number + " is even number");
+            } else {
+                System.out.println(number + " is odd number");
+            }
+        } else {
+            System.out.println("enter greater than one number");
+        }
+    }
+        void swappingOfTwoNumbers() {
         int temp = 0 , number1 = 10, number2 = 20;
         System.out.println("number one before swapping "+number1);
         System.out.println("number two before swapping "+number2);
