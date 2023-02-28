@@ -15,8 +15,32 @@ public class BasicCoreJavaProgram {
         int harmonicNum = 5;
         basicCoreJavaProgram.harmonicNumber(harmonicNum);
         System.out.println("---------------------------------");
+        int num = 18;
+        basicCoreJavaProgram.findPrimeFactors(num);
+        System.out.println();
+        System.out.println("---------------------------------");
 
 
+    }
+
+    void findPrimeFactors(int num) {
+        System.out.println("Prime factor of " + num+ " are :");
+
+        int i = 1;
+
+        while (i * i <= num) {
+            i++;
+            while (num % i == 0) {
+                num = num / i;
+                //  System.out.println(num);
+                System.out.print(i + " ");
+
+            }
+
+        }
+        if (num != 1) {
+            System.out.println(num);
+        }
     }
     void harmonicNumber(int harmonicNum) {
         System.out.println(" Nth harmonic number: ");
